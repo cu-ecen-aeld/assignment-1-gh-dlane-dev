@@ -3,6 +3,7 @@
 if [ $# != 2 ]
 then
 	echo "Invalid number of arguments passed, $#"
+	exit 1
 fi
 
 filesdir=$1

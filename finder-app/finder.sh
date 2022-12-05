@@ -22,7 +22,6 @@ total_matches_found=0
 
 for files in $files_in_dir;
 do
-	echo $files
 	if [ -f $files ]
 	then
 		files_found=$((files_found+1))
@@ -32,4 +31,4 @@ do
 done
 
 echo "The number of files are $files_found and the number of matching lines are $total_matches_found"
-
+exit 0

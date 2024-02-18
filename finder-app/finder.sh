@@ -4,7 +4,7 @@ if [ $# -eq 2 ]
 then
 	if [ -d "$1" ]
 	then
-		file_count=$(ls | wc -l)
+		file_count=$(ls -Aq $1 | wc -l)
 		matches_found=$(grep -r $2 $1 | wc -l)
 		echo "The number of files are ${file_count} and the number of matching lines are ${matches_found}"
 		exit 0
